@@ -1,0 +1,41 @@
+.container{
+    width: fit-content;
+    align-content: center;
+    img{
+        width:40%;
+    }
+}
+
+.pill{
+    margin: 1rem;
+    width: 10rem;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    border-radius: 1rem;
+    background-color: #363f64;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    color:#f4f5fc
+}
+
+.pill h3 {
+    margin: 1rem;
+    font-size: 1.2rem;
+    color: #f4f5fc;
+}
+
+.pillnums {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.pillnums h5 {
+    margin: .5rem;
+    font-size: 0.9rem;
+    color: #d1d5e6;
+}

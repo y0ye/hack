@@ -1,0 +1,39 @@
+.container{
+    width:100%;
+    height:100%;
+    background-color: #24293e;
+
+}
+
+.pillscrollhead{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+
+    h2{
+        margin:auto;
+        margin-bottom: 0;
+        color:#f4f5fc;
+        background-color: #363f64;
+        border-radius: 2rem;
+        width: 80%;
+    }
+}
+
+.pills{
+    width:100%;
+    display: flex;
+    overflow-x: scroll;
+    justify-content: center;
+}
+
+.appointmentdata{
+    margin-top: 5rem;
+    
+    form{
+        border-radius: 1rem;
+        text-align: center;
+        background-color: #363f64;
+        color:#f4f5fc
+    }
+}
