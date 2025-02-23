@@ -1,7 +1,19 @@
 import classes from '../assets/HealthTracker.module.css'
+import { useState } from 'react';
+import { PatientType, mockPatient } from '../types/PatientType';
+import { HeartConditionType, mockHeartCondition } from '../types/HeartConditionType';
+import { DailyActivityType, mockDailyActivity } from '../types/DailyActivityType';
+import { SleepBreathingRateType, mockSleepBreathingRate } from '../types/SleepBreathingType';
+import { HeartRateMeasurementType, mockHeartRateMeasurement } from '../types/HeartRateMeasurementType';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
 
+
 export default function HealthTracker() {
+    const [patients, setPatients] = useState<PatientType[]>(mockPatient);
+    const [heartConditions, setHeartConditions] = useState<HeartConditionType[]>(mockHeartCondition);
+    const [heartRateMeasurements, setHeartRateMeasurements] = useState<HeartRateMeasurementType[]>(mockHeartRateMeasurement);
+    const [sleepBreathingRates, setSleepBreathingRates] = useState<SleepBreathingRateType[]>(mockSleepBreathingRate);
+    const [dailyActivities, setDailyActivities] = useState<DailyActivityType[]>(mockDailyActivity);
     const data = [{ uv: 80}, { uv: 78}, { uv: 78}];
 
 

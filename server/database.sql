@@ -97,7 +97,7 @@ VALUES
 (3, 3, 'Lily', 'Johnson', '1972-06-18', 'Wife'),
 (4, 4, 'James', 'White', '1965-01-25', 'Son');
 
-INSERT INTO presctiption (presctiption_id,patient_id,medication_name,dosage, targeted)
+INSERT INTO prescription (prescription_id, patient_id, medication_name, dosage, targeted)
 VALUES
 (1, 1, 'Lisinopril', '10mg', 'Cardiovascular'), -- High blood pressure
 (2, 1, 'Metformin', '500mg', 'Endocrine'), -- Diabetes

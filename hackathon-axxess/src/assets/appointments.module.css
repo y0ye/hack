@@ -1,0 +1,24 @@
+
+.appointmentdata{
+    margin-top: 5rem;
+    overflow-y: scroll;
+    
+    form{
+        border-radius: 1rem;
+        text-align: center;
+        background-color: #363f64;
+        color:#f4f5fc
+    }
+}
+
+.appointmenthead{
+    margin-top: 2rem;
+    text-align: center;
+    width: 100%;
+    margin:auto;
+    margin-bottom: 1rem;
+    color:#f4f5fc;
+    background-color: #363f64;
+    border-radius: 2rem;
+    width: 80%;
+}
