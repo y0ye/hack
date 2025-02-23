@@ -45,11 +45,11 @@ export default function HealthTracker() {
                 </div>
                 <div className={classes.mediumwidget}>
                     <div className={classes.chart}>
-                        <LineChart width={300} height={300} data={data} margin={{ top: 5, right: 30, bottom: -8, left: -25 }}>
+                        <LineChart width={300} height={300} data={data} margin={{ top: 4, right: 30, bottom: -8, left: -25 }}>
                             <Line type="monotone" dataKey="HR" stroke="#000000" />
                             <CartesianGrid stroke="#99bbfd" strokeDasharray="5 5" />
                             <XAxis label="Day" dataKey="name" />
-                            <YAxis label="AVG HR" />
+                            <YAxis/>
                             <Tooltip />
                         </LineChart>
                     </div>

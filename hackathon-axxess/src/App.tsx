@@ -12,15 +12,12 @@ function App() {
           <button onClick={() => navigate('/HealthTracker')}>Health Tracker</button>
         </div>
         <div className='widget'>
-        <button onClick={() => navigate('/AiSummary')}>AI Summary</button>
+        <button onClick={() => navigate('/AiSummary')}>Ask an AI</button>
         </div>
       </div>
       <div className='right'>
         <div className='widget'>
         <button onClick={() => navigate('/MedicalData')}>Medical Information</button>
-        </div>
-        <div className='widget'>
-          <button>What Did I Miss?</button>
         </div>
       </div>
     </div>
