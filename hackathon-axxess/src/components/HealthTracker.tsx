@@ -41,7 +41,7 @@ export default function HealthTracker() {
                 <h2>Health Information</h2>
                 <div className={classes.smallwidget}>
                     <img src='src/assets/image.png'></img>
-                    <h3>88</h3>
+                    <h3>74</h3>
                 </div>
                 <div className={classes.mediumwidget}>
                     <div className={classes.chart}>

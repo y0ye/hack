@@ -51,6 +51,25 @@
     img{
         max-width: 10rem;
         margin:1rem;
+        animation: heartbeat 3s infinite ease-in-out;
+    }
+}
+
+@keyframes heartbeat {
+    0% {
+        transform: scale(1);
+    }
+    30% {
+        transform: scale(1.1);
+    }
+    50% {
+        transform: scale(1);
+    }
+    70% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
     }
 }
 
