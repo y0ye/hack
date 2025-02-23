@@ -9,6 +9,7 @@
     margin-top: 2rem;
     text-align: center;
     width: 100%;
+
     h2{
         margin:auto;
         margin-bottom: 0;
@@ -23,6 +24,7 @@
     width:100%;
     display: flex;
     overflow-x: scroll;
+    justify-content: center;
 }
 
 .appointmentdata{
