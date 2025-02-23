@@ -6,7 +6,7 @@ import { DailyActivityType, mockDailyActivity } from '../types/DailyActivityType
 import { SleepBreathingRateType, mockSleepBreathingRate } from '../types/SleepBreathingType';
 import { HeartRateMeasurementType, mockHeartRateMeasurement } from '../types/HeartRateMeasurementType';
 import { LineChart, Line, CartesianGrid, XAxis, YAxis, Tooltip } from 'recharts';
-import  HeartConditions  from '../components/HeartConditions';
+import HeartConditions  from '../components/HeartConditions';
 import HeartRateMeasurements from './HeartRateMeasurements';
 import SleepRateMeasurements from './SleepRateMesurements';
 import DailyActivityRateMeasurements from './DailyActivities';
@@ -17,7 +17,7 @@ export default function HealthTracker() {
     const [heartRateMeasurements, setHeartRateMeasurements] = useState<HeartRateMeasurementType[]>(mockHeartRateMeasurement);
     const [sleepBreathingRates, setSleepBreathingRates] = useState<SleepBreathingRateType[]>(mockSleepBreathingRate);
     const [dailyActivities, setDailyActivities] = useState<DailyActivityType[]>(mockDailyActivity);
-    const data = [{ uv: 80 }, { uv: 78 }, { uv: 78 }];
+    const data = [{ HR: 80 }, { HR: 78 }, { HR: 78 }];
 
     const fetchData = (endpoint, setter) => {
         fetch(`http://localhost:5001/${endpoint}`)
@@ -46,10 +46,10 @@ export default function HealthTracker() {
                 <div className={classes.mediumwidget}>
                     <div className={classes.chart}>
                         <LineChart width={300} height={300} data={data} margin={{ top: 5, right: 30, bottom: -8, left: -25 }}>
-                            <Line type="monotone" dataKey="uv" stroke="#000000" />
+                            <Line type="monotone" dataKey="HR" stroke="#000000" />
                             <CartesianGrid stroke="#99bbfd" strokeDasharray="5 5" />
-                            <XAxis dataKey="name" />
-                            <YAxis />
+                            <XAxis label="Day" dataKey="name" />
+                            <YAxis label="AVG HR" />
                             <Tooltip />
                         </LineChart>
                     </div>
