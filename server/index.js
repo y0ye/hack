@@ -16,7 +16,7 @@ app.get("/patient", async(req, res) => {
         const allpatient = await pool.query("SELECT * FROM patient WHERE patient_id = 1");
         res.json(allpatient.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -26,7 +26,7 @@ app.get("/prescription", async(req, res) => {
         const allPrescription = await pool.query("SELECT * FROM prescription WHERE patient_id = 1");
         res.json(allPrescription.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -36,7 +36,7 @@ app.get("/heart_condition", async(req, res) => {
         const allHeart_condition = await pool.query("SELECT * FROM heart_condition WHERE patient_id = 1");
         res.json(allHeart_condition.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -46,7 +46,7 @@ app.get("/heart_rate", async(req, res) => {
         const allHeart_rate = await pool.query("SELECT * FROM heart_rate_measurement WHERE patient_id = 1");
         res.json(allHeart_rate.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -56,7 +56,7 @@ app.get("/sleep", async(req, res) => {
         const allSleep = await pool.query("SELECT * FROM sleep_breathing_rate_measurements WHERE patient_id = 1");
         res.json(allSleep.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -66,7 +66,7 @@ app.get("/activity", async(req, res) => {
         const allActivity = await pool.query("SELECT * FROM daily_activity WHERE patient_id = 1");
         res.json(allActivity.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
@@ -76,7 +76,7 @@ app.get("/appointment", async(req, res) => {
         const allAppointment = await pool.query("SELECT * FROM appointment WHERE patient_id = 1");
         res.json(allAppointment.rows);
     } catch (err) {
-        console.erro(err.message)
+        console.error(err.message)
     }
 }
 )
