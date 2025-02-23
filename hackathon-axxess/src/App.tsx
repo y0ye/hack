@@ -17,7 +17,7 @@ function App() {
       </div>
       <div className='right'>
         <div className='widget'>
-        <button>Medical Information</button>
+        <button onClick={() => navigate('/MedicalData')}>Medical Information</button>
         </div>
         <div className='widget'>
           <button>What Did I Miss?</button>
