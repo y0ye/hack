@@ -11,7 +11,7 @@ function App() {
           <button onClick={() => navigate('/HealthTracker')}>Health Tracker</button>
         </div>
         <div className='widget'>
-        <button>AI Summary</button>
+        <button onClick={() => navigate('/AiSummary')}>AI Summary</button>
         </div>
       </div>
       <div className='right'>
