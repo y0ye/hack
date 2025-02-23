@@ -29,7 +29,8 @@
 }
 
 .appointmentdata{
-    margin-top: 5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
     overflow-y: auto;
     
     form{
@@ -37,6 +38,17 @@
         text-align: center;
         background-color: #363f64;
         color:#f4f5fc
+    }
+
+    h2{
+        text-align: center;
+        margin:auto;
+        margin-top:1rem;
+        margin-bottom: 1rem;
+        color:#f4f5fc;
+        background-color: #363f64;
+        border-radius: 2rem;
+        width: 80%;
     }
 }
 

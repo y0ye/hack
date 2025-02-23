@@ -66,6 +66,7 @@ export default function MedicalData() {
                 ))}
             </div>
             <div className={classes.appointmentdata}>
+            <h2 >Current Medications</h2>
                 {appointments.map((appointment) => (
                     <Appointment key={appointment.appointment_id} appointment={appointment} />
                 ))}

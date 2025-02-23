@@ -6,7 +6,7 @@ function App() {
 
   return (
 
-    <div id='archivo' className="dashboard">
+    <div className="dashboard">
       <div className='left'>
         <div className='widget'>
           <button onClick={() => navigate('/HealthTracker')}>Health Tracker</button>
