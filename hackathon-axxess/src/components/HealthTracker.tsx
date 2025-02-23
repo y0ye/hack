@@ -38,7 +38,7 @@ export default function HealthTracker() {
     return (
         <div className={classes.container}>
             <div className={classes.top}>
-                <h2>Health Information</h2>
+                <h2>Health Information for {patients[0].first_name} {patients[0].last_name}</h2>
                 <div className={classes.smallwidget}>
                     <img src='src/assets/image.png'></img>
                     <h3>74</h3>
