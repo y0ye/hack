@@ -1,6 +1,7 @@
 CREATE DATABASE health_info;
 
 ------ Switch to the new database
+\c health_info
 
 ------- Create the 'patient' table
 CREATE TABLE patient(
@@ -24,8 +25,8 @@ CREATE TABLE relative(
 );
 
 ------ Create the 'presctiption' table
-CREATE TABLE presctiption(
-    presctiption_id SERIAL PRIMARY KEY,
+CREATE TABLE prescription(
+    prescription_id SERIAL PRIMARY KEY,
     patient_id INT,
     medication_name VARCHAR(100),
     dosage VARCHAR(50),
@@ -53,7 +54,7 @@ CREATE TABLE heart_rate_measurement(
 );
 
 -- Create the 'sleep_breathing_rate_measurements' table
-CREATE TABLE sleep_breathing_rate_measurements (
+CREATE TABLE sleep_breathing_rate_measurements(
     measurement_id SERIAL PRIMARY KEY,
     patient_id INT,
     breathing_rate INT,
@@ -63,7 +64,7 @@ CREATE TABLE sleep_breathing_rate_measurements (
 );
 
 -- Create the 'daily_activity' table
-CREATE TABLE daily_activity (
+CREATE TABLE daily_activity(
     activity_id SERIAL PRIMARY KEY,
     patient_id INT,
     activity_date TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
@@ -72,7 +73,7 @@ CREATE TABLE daily_activity (
 );
 
 -- Create the 'appointment' table
-CREATE TABLE appointment (
+CREATE TABLE appointment(
     appointment_id SERIAL PRIMARY KEY,
     patient_id INT,
     appointment_name VARCHAR(100),
