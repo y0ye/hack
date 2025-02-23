@@ -5,7 +5,8 @@ function App() {
   const navigate = useNavigate();
 
   return (
-    <div className="dashboard">
+
+    <div id='archivo' className="dashboard">
       <div className='left'>
         <div className='widget'>
           <button onClick={() => navigate('/HealthTracker')}>Health Tracker</button>
